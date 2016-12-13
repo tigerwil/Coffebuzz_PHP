@@ -6,7 +6,7 @@
 //The root URL for the RESTful Services
 //REST:  REpresentational State Tranfer
 
-var apiURL = "http://localhost:8888/InClassCoffeebuzz_API/";
+var apiURL = "http://localhost:8888/SlimDemo_API/";
 
 
 //Retrieve categories when application starts
