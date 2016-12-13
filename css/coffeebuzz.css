@@ -1,0 +1,425 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+	/*mwilliams use inherited font from body */
+    /*font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+/* mwilliams - Google Font */
+.aldrich {
+ font-family: 'Aldrich', sans-serif;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/* mwilliams - added current menu item */
+.navbar-default .navbar-nav>li>a.current {color:#000;}
+/* end mwilliams current */
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+/* mwilliams:  product menu styles(coffee, muffins,etc)*/
+.menu{
+	transition:2s;
+	-webkit-transition:2s	
+}
+
+.menu:hover{
+	-webkit-filter:grayscale(80%); /* Safari*/
+	filter:grayscale(80%); /*standard syntax */
+	
+	-webkit-transform:scale(0.9,0.9);/* Safari*/
+	transform:scale(0.9,0.9);/*standard syntax */
+}
+
+.product-item{
+	border:4px solid #ddd;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px #fff, 0 0 8px #c8cfe6;
+	-moz-box-shadow: inset 0 1px #fff, 0 0 8px #c8cfe6;
+	box-shadow: inset 0 1px #fff, 0 0 8px #c8cfe6;
+	-o-transition:all .75s ease;
+	-moz-transition:all .75s ease;
+	-webkit-transition: all .75s ease;
+	transition: all .75s ease;	
+	position:relative;
+	
+}
+
+.product-item:hover{
+	border: 4px solid #8a4e29;
+}
+
+.product-item .product-image img{
+	padding:1em;
+	-o-transition:all .75s ease;
+	-moz-transition:all .75s ease;
+	-webkit-transition: all .75s ease;
+	transition: all .75s ease;	
+}
+
+.product-item:hover .product-image img{
+	position:relative;
+	transform: scale(1.1) rotate(5deg);
+}
+
+.product-item ul{
+	list-style-type:none;
+	margin-left:0;
+	margin-top:20px;
+	padding:0;	
+}
+
+.product-item ul li{
+	line-height:28px;
+}
+
+
+.product-info-fade{
+	opacity:0;
+	position:absolute;
+	top:0;
+	background:#000;
+	background:rgba(0,0,0,0.7);
+	color:#fff;
+	width:100%;
+	height:100%;	
+	transition: opacity .25s linear;
+}
+
+.product-item:hover  .product-info-fade{
+	opacity:1;	
+}
+
+.product-info-fade ul li:first-child{
+	text-transform:uppercase;
+	font-size:1.3em;
+}
+
+.product-info-fade ul li:last-child{
+	font-weight:bold;
+}
+
+.product-info-fade ul li:last-child span:after{
+		font-family:FontAwesome;
+		content:"\f02b";
+}
+	
+
+
+
+/* end product styles */
+
+
+
+
+
+footer {
+	/* mwilliams:  change footer background from white to black 
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+	*/
+	background: #000;
+    background: rgba(0,0,0,0.5);
+	color:#fff;
+	padding:30px 0;
+}
+
+/*mwilliams: social icons */
+footer a{color:#fff;}
+
+footer a:hover{color:#8b3802;}
+
+footer ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+footer ul li{
+	display:inline-block;
+	margin-left:15px;	
+}
+
+footer ul.social li a:hover{
+	color:#54CF08;
+}
+
+.gototop{
+	height:30px;
+	width:30px;
+	line-height:30px;
+	display:inline-block;
+	text-align:center;
+	background:#2b2b2b;
+}
+
+.gototop:hover{
+	background:#1d1d1d;
+	color:#fff;
+}
+
+/* end mwilliams social icons */
+footer p {
+    margin: 0;
+    padding: 15px 0;
+	/*mwilliams copyright*/
+	color:#fff;
+	font-size:small;
+	/*end mwilliams*/
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        /*font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        /*mwilliams: decrease padding fix for tables portrait
+		padding: 35px;*/
+		padding: 25px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+
+/************* CUSTOM CSS:  mwilliams *******************/
+#careers .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #ccc;
+}
+
+#careers table thead{
+	font-family: 'Aldrich', sans-serif;
+	background:rgb(77,45,34);
+	color:#fff;
+}
+
+.table-bordered {
+  border: 2px solid rgb(77,45,34);
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+   border: 1px solid rgb(77,45,34);
+}
+
+#careers table tbody tr td:nth-child(4), 
+#careers table tbody tr td:nth-child(5){
+	color: rgb(77,45,34);
+	text-align:center;
+}
+
+#careers .table-hover > tbody > tr:hover {
+  background-color: rgba(0,0,0,0.4);
+  color:#fff;
+}
+
+
+/* mwilliams:  job application form */
+label {color:#825539;}
+
+legend{
+	background:#bf7c52;
+	color:#431400;
+	padding: .25em;
+	border:1px solid #b2b2b2;
+	border-radius: 7px;	
+}
+
+/* margin for select input that has multiple attribute */
+select[multiple]{
+	margin-bottom:.5em;
+}
+.checkbox{
+	font-weight:normal;
+	color:#431400;
+}
+
+.job span{
+	color: #825539;
+	font-weight:700;
+	line-height:2em;
+}
+
+
+/* mwilliams:  fairtrade */
+.ftrade{
+	width:80px;
+	height:80px;
+}
+#certification .media{min-height:240px;border-radius:15px}
+#certification .media:hover{background-color:rgba(25,25,25,0.2)}
+#certification .media-heading{margin-top:1.1em;}
+
+.embed-responsive{margin-bottom:2em;}
+
+
+
+
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
